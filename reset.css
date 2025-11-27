@@ -1,0 +1,43 @@
+/* === CSS RESET === */
+:root {
+  --font-family: 'Livvic', sans-serif;
+  --color-primary-green: #014e56;
+  --color-primary-light-coral: #f67e7e;
+  --color-primary-white: #ffffff;
+  --color-secondary-rapture-blue: #79c8c7;
+  --color-secondary-police-blue: #2c6269;
+  --color-secondary-jungle-green: #004047;
+  --color-secondary-state-green: #012f34;
+  --color-secondary-dark-green: #002529;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+    font-family: var(--font-family);
+}
