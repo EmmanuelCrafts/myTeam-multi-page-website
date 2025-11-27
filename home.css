@@ -133,3 +133,80 @@ nav {
     opacity: 80%;
     font-weight: 700;
 }
+
+/* stories container section */
+.stories-container {
+    background-color: var(--color-secondary-jungle-green);
+}
+
+.stories-heading {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.stories-heading h2 {
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: var(--color-primary-white);
+    text-align: center;
+}
+.stories-heading span {
+    color: var(--color-secondary-rapture-blue);
+}
+
+.stories-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.stories-card {
+    width: 90%;
+    margin: 0 auto;
+    color: var(--color-primary-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stories-card .quote {
+    width: 20%;
+}
+
+.stories-card p {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 700;
+    top: -50px;
+}
+
+.stories-card h3 {
+    color: var(--color-secondary-rapture-blue);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.stories-card span {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin-top: 2px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.stories-card .profile {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-top: 16px;
+}
