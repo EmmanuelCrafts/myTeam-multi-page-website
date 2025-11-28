@@ -1,0 +1,28 @@
+.about-intro {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 108px;
+    text-align: center;
+    position: relative;
+    color: var(--color-primary-white);
+}
+
+.about-intro h1 {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.about-intro p {
+ font-weight: 700;
+}
+
+.pattern-about-1 img{
+    right: 0;
+    position: absolute;
+    transform: translateX(60%);
+    margin-top: 8px;
+}

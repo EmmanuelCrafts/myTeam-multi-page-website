@@ -1,0 +1,121 @@
+/* header styling */
+header {
+    background-color: var(--color-primary-green);
+    padding-top: 48px;
+    overflow: hidden;
+}
+
+/* navbar styling */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* hide large screen navbar */
+.large-screen-nav {
+    display: none;
+}
+
+
+/* start container */
+.start-container {
+    background-color: var(--color-primary-light-coral);
+    padding: 83px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.start-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.start-container h2 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-size: bold;
+    color: var(--color-primary-white);
+    text-align: center;
+    color: var(--color-secondary-state-green);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-btn {
+    appearance: none;
+    margin-top: 24px;
+    background-color: var(--color-primary-light-coral);
+    color: var(--color-secondary-jungle-green);
+    padding:  8px 32px;
+    border: 2px solid var(--color-secondary-jungle-green);
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--color-secondary-jungle-green);
+    color: var(--color-primary-white);
+}
+
+.start-container .pattern-bg-6 img {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(15%);
+}
+
+/* footer  */
+footer {
+    background-color: var(--color-secondary-dark-green);
+    padding: 64px 0;
+    color: var(--color-primary-white);
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
+.footer-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.footer-nav img{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.address-container {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.footer-wrapper p {
+    margin-top: 16px;
+    opacity: 60%;
+}
