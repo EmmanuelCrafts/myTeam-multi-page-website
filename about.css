@@ -26,3 +26,112 @@
     transform: translateX(60%);
     margin-top: 8px;
 }
+
+.directors-container {
+ padding-top: 88px;
+ position: relative;
+ overflow: hidden;
+ background-color: var(--color-secondary-jungle-green);
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+}
+
+.directors-container .pattern-about-2 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.directors-container h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: var(--color-primary-white);
+    margin-bottom: 48px;
+}
+
+.director-card {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-secondary-state-green);
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.director-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.director-wrapper img {
+    border-radius: 50%;
+    margin: 32px 0 16px 0;
+    width: 40%;
+    border: 2px solid var(--color-primary-white);
+}
+
+.director-wrapper h3 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: var(--color-secondary-rapture-blue);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.director-wrapper span {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: var(--color-primary-white);
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+.add-icon {
+   width: 56px;
+   height: 56px;
+   background-color: var(--color-primary-light-coral);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position:absolute;
+   bottom: 0px;
+   transform: translateY(50%);
+}
+
+
+.director-wrapper p{
+    color: var(--color-primary-white);
+    font-weight: 700;
+    margin-bottom: 24px;
+    width: 80%;
+    text-align: center;
+}
+
+.director-card .links {
+    display: flex;
+    border: 1px solid red;
+}
+
+.director-card  img {
+}
+.close-icon {
+   width: 56px;
+   height: 56px;
+   background-color: var(--color-secondary-rapture-blue);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position:absolute;
+   bottom: 0px;
+   transform: translateY(50%);
+}
