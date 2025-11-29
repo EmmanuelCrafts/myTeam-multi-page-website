@@ -10,7 +10,8 @@
     <!-- css link -->
      <link rel="stylesheet" href="reset.css">
      <link rel="stylesheet" href="global.css">
-    <title>COntact us</title>
+     <link rel="stylesheet" href="contact.css">
+    <title>Contact us</title>
 </head>
 <body>
       <header>
@@ -36,51 +37,54 @@
             </div>
         </nav>
 
-       
-    </header>
-    <main>
-          <section class="contact-intro">
+        <section class="contact-intro">
             <h1>Contact</h1>
             <p>Ask us about</p>
-             <div class="card">
-                <img src="assets/icon-person.svg" alt="icon person illustration">
-                <p>The quality of our talent network</p>
-            </div>
-            <div class="card">
-                <img src="assets/icon-cog.svg" alt="icon cog illustration">
-                <p>Usage & implementation of our software</p>
-            </div>
-            <div class="card">
-                <img src="assets/icon-chart.svg" alt="icon chart illustration">
-                <p>How we help drive innovation</p>
-            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                  <img src="assets/icon-person.svg" alt="icon person illustration">
+                  <p>The quality of our talent network</p>
+                </div>
 
-            <form action="">
-               <div>
+                <div class="card">
+                  <img src="assets/icon-cog.svg" alt="icon cog illustration">
+                  <p>Usage & implementation of our software</p>
+                </div>
+
+                <div class="card">
+                  <img src="assets/icon-chart.svg" alt="icon chart illustration">
+                  <p>How we help drive innovation</p>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section class="form-container">
+            <form action="" class="form-wrapper">
+               <div class="input-wrapper">
                    <label for="fullname">Name</label>
                    <input type="text" id="fullname" name="fullname">
                </div>
 
-                <div>
+                <div class="input-wrapper">
                    <label for="email">Email Address</label>
                    <input type="email" id="email" name="email">   
                 </div>
 
-                 <div>
+                 <div class="input-wrapper">
                    <label for="companyName">Company Name</label>
                    <input type="text" id="companyName" name="companyName">   
                 </div>
 
-                <div>
+                <div class="input-wrapper">
                    <label for="message">Message</label>
                    <input type="text" name="message" id="message">
                 </div>
 
                 <div>
-                  <button type="submit">Submit</button>   
+                  <button class="form-btn" type="submit">Submit</button>   
                 </div>
             </form>
-            <div>
+            <div class="pattern-contact-1">
                 <img src="assets/bg-pattern-contact-2.svg" alt="pattern background">
             </div>
         </section>

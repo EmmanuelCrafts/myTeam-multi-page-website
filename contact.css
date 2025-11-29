@@ -1,0 +1,105 @@
+.contact-intro {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.contact-intro h1 {
+    margin-bottom: 16px;
+}
+
+.contact-intro > p{
+    color: var(--color-primary-light-coral);
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0;
+    margin-bottom: 40px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.contact-intro .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-primary-white);
+    gap: 24px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card p {
+    text-align: left;
+    width: 70%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+
+/* form */
+.form-container {
+    background-color: var(--color-primary-green);
+    padding: 56px 0 88px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: var(--color-primary-white);
+    font-weight: bold;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    padding-left: 14px;
+    opacity: 60%;
+}
+.input-wrapper input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: 60%;
+    border-bottom: 1px solid var(--color-primary-white);
+}
+
+
+.form-btn {
+    appearance: none;
+    background-color: var(--color-primary-white);
+    color: var(--color-secondary-jungle-green);
+    padding:  8px 32px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: var(--color-secondary-jungle-green);
+    color: var(--color-primary-white);
+}
+
+.pattern-contact-1 img {
+    position: absolute;
+    right: 0;
+    transform: translate(50%, -10%);
+}
