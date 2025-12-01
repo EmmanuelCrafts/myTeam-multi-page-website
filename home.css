@@ -1,6 +1,4 @@
 
-
-
 /* intro container  */
 .intro-container {
     width: 90%;
@@ -98,7 +96,6 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    font-weight: bold;
 }
 
 .card p {
@@ -110,7 +107,7 @@
     color: var(--color-primary-white);
     margin-top: 8px;
     opacity: 80%;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* stories container section */
@@ -162,7 +159,7 @@
     letter-spacing: 0px;
     text-align: center;
     margin-top: 16px;
-    font-weight: 700;
+    font-weight: 600;
     top: -50px;
     z-index: 1;
 }
@@ -172,7 +169,6 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    font-weight: bold;
     margin-top: 16px;
 }
 

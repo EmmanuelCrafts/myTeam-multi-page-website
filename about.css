@@ -13,7 +13,7 @@
 }
 
 .about-intro p {
- font-weight: 700;
+ font-weight: 600;
 }
 
 .pattern-about-1 img{
@@ -79,7 +79,6 @@
     letter-spacing: 0;
     color: var(--color-secondary-rapture-blue);
     margin-bottom: 8px;
-    font-weight: bold;
 }
 
 .director-wrapper span {
@@ -113,7 +112,7 @@
 
 .director-wrapper p{
     color: var(--color-primary-white);
-    font-weight: 700;
+    font-weight: 600;
     width: 80%;
     text-align: center;
 }

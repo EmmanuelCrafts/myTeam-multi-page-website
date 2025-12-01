@@ -37,7 +37,6 @@ header {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0px;
-    font-size: bold;
     color: var(--color-primary-white);
     text-align: center;
     color: var(--color-secondary-state-green);
@@ -54,7 +53,7 @@ header {
     padding:  8px 32px;
     border-radius: 24px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 28px;
     letter-spacing: 0px;
     cursor: pointer;
@@ -80,7 +79,7 @@ footer {
     font-size: 15px;
     line-height: 25px;
     letter-spacing: 0px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .footer-wrapper {
@@ -106,6 +105,9 @@ footer {
 .address-container {
     text-align: center;
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .social-links {
@@ -113,10 +115,11 @@ footer {
     gap: 16px;
     margin-top: 40px;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 .footer-wrapper p {
-    margin-top: 16px;
     opacity: 60%;
 }
 
@@ -127,11 +130,10 @@ footer {
         padding-top: 64px;
     }
     
-  
+  /* navbar */
     .nav-list {
         display: flex;
         align-items: center;
-        color: var(--color-primary-white);
         gap: 48px;
     }
 
@@ -142,14 +144,23 @@ footer {
     .large-screen-nav ul {
         display: flex;
         gap: 40px;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 0px;
+     
     }
 
-    .large-screen-nav ul {
-        display: flex;
+    .large-screen-nav li,
+    .footer-nav li {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: var(--color-primary-white);
+        transition: color 0.3s ease;
+    }
+
+    .large-screen-nav li:hover ,
+    .footer-nav li:hover {
+        color: var(--color-primary-light-coral);
+        cursor: pointer;
     }
 
     .mobile-menu {
@@ -160,6 +171,38 @@ footer {
         display: block;
     }
    
-    
+    /* footer */
+
+    footer {
+        padding: 56px 0;
+    }
+    .footer-wrapper-one {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+   
+    .footer-wrapper-one img {
+        margin: 0;
+    }
+    .footer-nav ul{
+         justify-content: flex-start;
+    }
+
+    .address-container {
+        margin: 0;
+        text-align: right;
+    }
+   
+    .footer-wrapper-two {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .social-links {
+        margin: 0;
+    }
 
 }
