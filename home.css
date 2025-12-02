@@ -192,3 +192,28 @@
     margin-left: auto;
     margin-top: 64px;
 }
+
+/* tablets */
+@media (min-width:768px) {
+    .intro-container {
+        margin-top: 112px;
+    }
+
+   .intro-container h1 {
+    width: 50%;
+    margin-bottom: 24px;
+   }
+    
+   .intro-container p {
+     width: 70%;
+     margin: 0 auto;
+   }
+
+   .header-bg-pattern {
+    margin-top: 156px;
+   }
+
+   .header-bg-pattern img {
+     width: 40%;
+   }
+}

@@ -64,3 +64,12 @@ ul, ol, li {
 body {
     font-family: var(--font-family);
 }
+
+/* tablets */
+@media (min-width:768px) {
+   h1 {
+    font-size: 64px;
+    line-height: 56px;
+    letter-spacing: o;
+   }
+}
