@@ -91,6 +91,12 @@
     height: min(20%, 72px);
 }
 
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
 .card h2 {
     color: var(--color-primary-light-coral);
     font-size: 18px;
@@ -105,7 +111,6 @@
     width: 100%;
     text-align: center;
     color: var(--color-primary-white);
-    margin-top: 8px;
     opacity: 80%;
     font-weight: 600;
 }
@@ -150,7 +155,6 @@
 
 .stories-card .quote {
     width: 15%;
-    transform: translateY(40px);
 }
 
 .stories-card p {
@@ -158,9 +162,9 @@
     line-height: 25px;
     letter-spacing: 0px;
     text-align: center;
-    margin-top: 16px;
     font-weight: 600;
-    top: -50px;
+    top: -18px;
+    position: relative;
     z-index: 1;
 }
 
@@ -169,7 +173,6 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
-    margin-top: 16px;
 }
 
 .stories-card span {
@@ -215,5 +218,49 @@
 
    .header-bg-pattern img {
      width: 40%;
+   }
+
+   /* cards container */
+   .cards-container {
+    padding-bottom: 100px;
+   }
+
+   .card-heading  {
+    width: 70%;
+    padding-top: 100px;
+   }
+
+   .card-heading h2 {
+    width: 80%;
+   }
+
+   .card {
+    width: 70%;
+    gap: 24px;
+    flex-direction: row;
+    justify-content: center;
+   }
+
+   .card img {
+    margin: 0;
+   }
+
+   .card-info { 
+      gap: 16px;
+      align-items: flex-start;
+   }
+
+   .card P {
+    text-align: left;
+   }
+
+   /* stories container section */
+   .stories-heading {
+    width: 60%;
+    padding: 0;
+   }
+
+   .stories-card {
+    width: 70%;
    }
 }
