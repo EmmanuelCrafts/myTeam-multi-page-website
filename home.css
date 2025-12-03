@@ -263,4 +263,9 @@
    .stories-card {
     width: 70%;
    }
+
+   .stories-container .pattern-bg-5 img{
+    margin-left: auto;
+    margin-top: 0;
+}
 }

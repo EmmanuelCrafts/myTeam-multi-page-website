@@ -17,8 +17,8 @@
 }
 
 .pattern-about-1 img{
-    right: 0;
     position: absolute;
+    right: 0;
     transform: translateX(60%);
     margin-top: 8px;
 }
@@ -181,3 +181,20 @@
     margin: 0 auto;
 }
 
+/* Tablet*/
+@media (min-width: 768px) {
+    /* intro section */
+    .about-intro {
+        padding: 112px 0;
+    }
+
+    .about-intro p {
+        width: 65%;
+        margin: 0 auto;
+    }
+    
+    .pattern-about-1 img {
+        
+        transform: translate(70%, -50%);
+    }
+}
