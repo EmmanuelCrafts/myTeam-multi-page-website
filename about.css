@@ -205,6 +205,10 @@
         margin-bottom:  0;
         width: 100%;
     }
+    
+    .directors-container .pattern-about-2 img {
+         transform: translate(-50%, 0);
+     }
 
     .directors-card-wrapper {
         width: 80%;
@@ -228,6 +232,28 @@
 
    .item-6 {
     grid-area: swappedLeft;
+   }
+
+   /* clients container */
+
+   .clients {
+    padding: 100px 0;
+   }
+
+   .clients .pattern-about-4 img{
+  
+    transform: translate(0,-50%);
+    }
+
+   .clients-wrapper {
+    flex-direction: row;
+    margin-top: 48px;
+    width: 90%;
+   }
+
+  
+   .logo img {
+    width: 100%;
    }
     
 }
