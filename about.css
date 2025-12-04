@@ -24,13 +24,12 @@
 }
 
 .directors-container {
- padding-top: 88px;
+ padding: 88px 0 116px 0;
  position: relative;
  overflow: hidden;
  background-color: var(--color-secondary-jungle-green);
  display: flex;
  flex-direction: column;
- gap: 24px;
 }
 
 .directors-container .pattern-about-2 img {
@@ -52,11 +51,11 @@
 .director-card {
     display: flex;
     justify-content: center;
-    background-color: var(--color-secondary-dark-green);
+    background-color: var(--color-secondary-state-green);
     width: 90%;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 52px;
     border-radius: 8px;
 }
 
@@ -107,7 +106,8 @@
 .director-card.quote-card {
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 0;
+    background-color: var(--color-secondary-dark-green);
 }
 
 .director-wrapper p{
@@ -141,7 +141,9 @@
 }
 
 .directors-container .pattern-about-3 img {
-   margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /* clients */
@@ -194,7 +196,38 @@
     }
     
     .pattern-about-1 img {
-        
         transform: translate(70%, -50%);
     }
+
+    /* directors section */
+
+    .director-card {
+        margin-bottom:  0;
+        width: 100%;
+    }
+
+    .directors-card-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        column-gap: 12px;
+        row-gap: 76px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "a b"
+            "c d"
+            "swappedLeft swappedRight"
+         ;
+    }
+
+    /* shift the order of the last row */
+    .item-5 {
+        grid-area: swappedRight;
+    }
+
+   .item-6 {
+    grid-area: swappedLeft;
+   }
+    
 }
