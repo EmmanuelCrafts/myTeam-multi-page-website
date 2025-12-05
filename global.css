@@ -234,3 +234,11 @@ footer {
     }
 
 }
+
+/* laptops */
+@media (min-width: 1024px) {
+    .header-nav {
+        
+    }
+    
+}

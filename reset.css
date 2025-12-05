@@ -73,3 +73,10 @@ body {
     letter-spacing: o;
    }
 }
+
+@media (min-width: 1024px) {
+   h1 {
+    font-size: 72px;
+    line-height: 72px;
+   }
+}

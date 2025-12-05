@@ -4,10 +4,12 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 80px;
-    text-align: center;
     color: var(--color-primary-white);
 }
 
+.pattern-intro-bg {
+    display: none;
+}
 .intro-container h1 {
     width: min(70%, 240px);
     margin: 0 auto;
@@ -19,22 +21,26 @@
     color: var(--color-primary-light-coral);
 }
 
+.line-style {
+    display: none;
+}
+
 .intro-container p {
     font-size: 15px;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0px;
+    text-align: center;
 }
 
-.header-bg-pattern {
-    width: 100%;
-    margin-top: 97px;
-}
+
 
 .header-bg-pattern img {
-    width: 95%;
+    padding-top: 100px;
     margin: 0 auto;
+    width: 95%;
 }
+
 
 /* cards container section */
 .cards-container {
@@ -212,12 +218,10 @@
      margin: 0 auto;
    }
 
-   .header-bg-pattern {
-    margin-top: 156px;
-   }
+
 
    .header-bg-pattern img {
-     width: 40%;
+     width: min(40%, 358px);
    }
 
    /* cards container */
@@ -267,5 +271,61 @@
    .stories-container .pattern-bg-5 img{
     margin-left: auto;
     margin-top: 0;
+    }
 }
+
+/* laptops */
+@media (min-width: 1024px) {
+    .intro-container {
+        display: flex;
+        gap: 30px;
+        align-items: flex-end;
+    }
+    
+    /* .pattern-intro-bg {
+        display: block;
+        position: absolute;
+        left: 0;
+        transform: translateX(-50%);
+    } */
+    .intro-container h1{
+      margin: 0;
+      width: 50%;
+      text-align: left;
+    }
+    
+    .p-styling {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .line-style {
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: var(--color-secondary-rapture-blue);
+    }
+
+    .intro-container p{
+         margin: 0;
+         width: 100%;
+         font-size: 18px;
+         text-align: left;
+   }
+
+   .header-bg-pattern {
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   .header-bg-pattern img{
+     margin: 0;
+     margin-left: auto;
+   }
+
 }
+
+
+
