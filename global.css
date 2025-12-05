@@ -198,6 +198,12 @@ footer {
     /* Start container */
     .start-wrapper {
        flex-direction: row;
+       justify-content: space-between;
+       width: 70%;
+    }
+
+    .start-container h2 {
+        width: fit-content;
     }
     /* footer */
 
@@ -237,8 +243,16 @@ footer {
 
 /* laptops */
 @media (min-width: 1024px) {
-    .header-nav {
-        
+    /* start container */
+    .start-container {
+        padding: 78px 0;
+    }
+    .start-wrapper {
+        width: 80%;
+    }
+    .start-container h2 {
+    font-size: 48px;
+    line-height: 48px;
     }
     
 }
