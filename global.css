@@ -254,5 +254,30 @@ footer {
     font-size: 48px;
     line-height: 48px;
     }
-    
+/* footer */
+.footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.footer-wrapper-one {
+    width: 50%;
+}
+
+.footer-nav img {
+    width: 100%;
+}
+.address-container {
+    text-align: left;
+    gap: 0;
+}
+.footer-wrapper-two {
+    margin: 0;
+    flex-direction: column;
+    width: 40%;
+    gap: 51px;
+    align-items: flex-end;
+}
 }
