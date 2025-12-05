@@ -200,6 +200,7 @@
     height: 62px;
     border-radius: 50%;
     margin-top: 16px;
+    border: 2px solid white;
 }
 
 .stories-container .pattern-bg-5 img{
@@ -376,7 +377,27 @@
     gap: 32px;
     width: 100%;
    }
+/* stories container */
+   .stories-wrapper {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+   }
 
+   .stories-heading {
+    width: 80%;
+   }
+   .stories-heading h2{
+    padding-top: 40px;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 56px;
+   }
+
+   .stories-container .pattern-bg-5 img{
+    margin-top: 40px;
+}
 }
 
 
