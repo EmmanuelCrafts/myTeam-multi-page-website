@@ -1,12 +1,14 @@
 .about-intro {
-    width: 90%;
     margin: 0 auto;
     padding: 80px 0 108px 0;
     text-align: center;
     position: relative;
     color: var(--color-primary-white);
 }
-
+.about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
 .about-intro h1 {
     margin-bottom: 16px;
 }
@@ -21,7 +23,8 @@
 .pattern-about-1 img{
     position: absolute;
     right: 0;
-    transform: translateX(60%);
+    bottom: 0;
+    transform: translate(50%, 50%);
     margin-top: 8px;
 }
 
@@ -192,13 +195,14 @@
         padding: 112px 0;
     }
 
+
     .about-intro p {
         width: 65%;
         margin: 0 auto;
     }
     
     .pattern-about-1 img {
-        transform: translate(70%, -50%);
+        transform: translate(50%,0);
     }
 
     /* directors section */
@@ -247,7 +251,6 @@
    }
 
    .clients .pattern-about-4 img{
-  
     transform: translate(0,-50%);
     }
 
@@ -269,13 +272,20 @@
     .about-intro {
         padding: 120px 0;
     }
+
+    .about-intro h1 {
+        font-size: 64px;
+        line-height: 100px;
+        text-align: left;
+    }
     .about-wrapper {
         display: flex;
         justify-content: space-between;
-        width: 95%;
+        width: 90%;
+        margin: 0 auto;
     }
     .about-styling {
-        width: 50%;
+        width: 65%;
     }
     .line-deco {
         display: block;
@@ -287,10 +297,7 @@
         text-align: left;
         margin: 0;
         padding-top: 40px;
-        width: 100%;
-    }
-    .pattern-about-1 img {
-        transform: translate(80%, -50%);
+        width: 90%;
     }
 
     /* directors section */
@@ -298,9 +305,9 @@
         padding: 140px 0;
     }
     .directors-container h2 {
-    font-size: 48px;
-    line-height: 48px;
-    margin-bottom: 64px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 64px;
     }
 
     /* Remove swapped grid-areas */
@@ -309,9 +316,37 @@
         grid-area: auto;
     }
     .directors-card-wrapper {
+        width: 90%;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
         grid-template-areas: none;
         column-gap: 30px;
     }
+
+    /* clients section */
+    .clients {
+        padding: 140px 0;
+    }
+
+    .clients h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+     .clients .pattern-about-4 img{
+    transform: translate(0);
+    }
+}
+
+/* large screens */
+@media (min-width: 1280px) {
+    .about-wrapper,
+    .directors-card-wrapper,
+    .clients-wrapper {
+        width: min(80%, 1110px);
+    }
+    .about-intro p {
+        width: 100%;
+    }
+     
 }
