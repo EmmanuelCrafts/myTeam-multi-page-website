@@ -206,10 +206,7 @@ footer {
         width: fit-content;
     }
 
-    .start-container .pattern-bg-6 img {
-    bottom: 0;
-    transform: translateY(0);
-    }
+
 
     /* footer */
 
@@ -298,5 +295,10 @@ footer {
 
     .start-wrapper {
         width: min(70%, 917px);
+    }
+
+    .start-container .pattern-bg-6 img {
+         bottom: 0;
+         transform: translateY(0);
     }
 }
