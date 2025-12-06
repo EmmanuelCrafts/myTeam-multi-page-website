@@ -205,6 +205,12 @@ footer {
     .start-container h2 {
         width: fit-content;
     }
+
+    .start-container .pattern-bg-6 img {
+    bottom: 0;
+    transform: translateY(0);
+    }
+
     /* footer */
 
     footer {
@@ -264,6 +270,8 @@ footer {
 
 .footer-wrapper-one {
     width: 50%;
+    justify-content: flex-start;
+    gap: 125px;
 }
 
 .footer-nav img {
@@ -284,8 +292,11 @@ footer {
 
 @media (min-width: 1280px) {
     .header-nav,
-    .start-wrapper,
     .footer-wrapper {
         width: min(80%, 1110px);
+    }
+
+    .start-wrapper {
+        width: min(70%, 917px);
     }
 }
