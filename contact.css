@@ -1,3 +1,7 @@
+body {
+  background-color: var(--color-primary-green);
+}
+
 .contact-intro {
     margin-top: 80px;
     text-align: center;
@@ -46,7 +50,6 @@
 
 /* form */
 .form-container {
-    background-color: var(--color-primary-green);
     padding: 56px 0 88px 0;
     position: relative;
     overflow: hidden;
@@ -70,7 +73,6 @@
 .input-wrapper label {
     padding-left: 14px;
     opacity: 60%;
-
 }
 .input-wrapper input {
     background-color: transparent;
@@ -154,3 +156,5 @@
   
     
 }
+
+/* laptops */
