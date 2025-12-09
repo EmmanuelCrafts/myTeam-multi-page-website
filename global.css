@@ -30,7 +30,8 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.contact-btn:hover {
+.contact-btn:hover ,
+.scroll-btn .contact-btn:hover{
     color: var(--color-secondary-jungle-green);
     background-color: var(--color-primary-white);
 }
@@ -39,7 +40,58 @@ header {
     display: none;
 }
 
+/* scroll menu */
+.menu-scroll {
+    height: 100dvh;
+    width: 65%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding-top: 48px;
+    transform: translateX();
+    background-color: var(--color-secondary-police-blue);
+}
+.close-btn {
+    margin-left: auto;
+    width: fit-content;
+    padding-right: 24px;
+}
+.scroll-btn .contact-btn {
+    display: block;
+    background-color: var(--color-secondary-police-blue);
+}
 
+.scroll-nav {
+    margin-top: 40px;
+    margin-left: 48px;
+}
+.nav-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-bottom: 33px;
+}
+.nav-wrapper  li {
+    font-size: 18px;
+    font-weight: 600;
+     line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--color-primary-white);
+    transition: color 0.3s ease;
+    }
+
+.nav-wrapper li:hover {
+    color: var(--color-primary-light-coral);
+    cursor: pointer;
+}
+
+.pattern-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%);
+}
 /* start container */
 .start-container {
     background-color: var(--color-primary-light-coral);
