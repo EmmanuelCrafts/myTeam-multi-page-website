@@ -33,3 +33,59 @@ inputs.forEach((input) => {
           label.style.opacity = 0.6;
         });
 })
+
+const validateInput = (input, errorElement, minlength, message) => {
+      const value = input.value.trim();
+
+      if (value.length === 0) {
+        input.previousElementSibling.style.color = "#f67e7e";
+        input.style.borderBottom = "1px solid #f67e7e";
+        errorElement.textContent = "This field is required";
+        return false;
+      }
+
+      if(value.length < minlength) {
+        input.previousElementSibling.style.color = "#f67e7e";
+        input.style.borderBottom = "1px solid #f67e7e";
+        error.textContent =  message;
+        return false;
+      }
+      
+      return true;
+}
+
+const validateEmail = (input, error) => {
+
+    const value = input.value.trim();
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (value.length === 0) {
+        input.previousElementSibling.style.color = "#f67e7e";
+        input.style.borderBottom = "1px solid #f67e7e";
+        error.textContent = "This field is required";
+        return false;
+    }
+
+    if (!pattern.test(value)) {
+        input.previousElementSibling.style.color = "#f67e7e";
+        input.style.borderBottom = "1px solid #f67e7e";
+        error.textContent = "please enter a valid email";
+        return false;
+    }
+
+    return true;
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nameValid = validateInput(fullname, nameError , 3 , "name must be at least 3 characters long");
+    const emailValid = validateEmail(email, emailError);
+    const companyValid = validateInput(companyName, companyError , 3 , " company name must be at least 3 characters long")
+    const messageValid = validateInput(message, messageError ,10, "message must be at least 10 characters long");
+
+    if (nameValid && emailValid && companyValid && messageValid) {
+        form.submit();
+    }
+
+});

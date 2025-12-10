@@ -91,6 +91,14 @@ main {
   padding-left: 16px;
 }
 
+/* error message */
+.error {
+  font-size: 10px;
+   color: var(--color-primary-light-coral);
+   padding-top: 6px;
+   font-style: italic;
+}
+
 .message label{
     margin-bottom: 34px;
 }
