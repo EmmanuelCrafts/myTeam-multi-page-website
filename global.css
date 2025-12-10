@@ -61,6 +61,7 @@ header {
     margin-left: auto;
     width: fit-content;
     padding-right: 24px;
+    cursor: pointer;
 }
 .scroll-btn .contact-btn {
     display: block;
@@ -88,6 +89,10 @@ header {
 
 .nav-wrapper li:hover {
     color: var(--color-primary-light-coral);
+    cursor: pointer;
+}
+
+.mobile-menu {
     cursor: pointer;
 }
 
