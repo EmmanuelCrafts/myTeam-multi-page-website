@@ -26,56 +26,86 @@ inputs.forEach((input) => {
     const label = input.previousElementSibling;
 
     input.addEventListener("focus",() => {
-        label.style.opacity = 0;
+        label.classList.add("label-hidden");
+        label.classList.remove("label-show")
     });
 
     input.addEventListener("blur", () => {
-          label.style.opacity = 0.6;
+          label.classList.add("label-show");
+          label.classList.remove("label-hidden");
         });
 })
+
+
+// show errors by adding classes
+const setError = (input, errorElement, message) => {
+    input.classList.add("input-error");
+    input.previousElementSibling.classList.add("label-error");
+    errorElement.textContent = message;
+}
+
+// clear  error by removing classes
+const clearError = (input, errorElement) => {
+    input.classList.remove("input-error");
+    input.previousElementSibling.classList.remove("label-error")
+
+    errorElement.textContent = '';
+}
 
 const validateInput = (input, errorElement, minlength, message) => {
       const value = input.value.trim();
 
       if (value.length === 0) {
-        input.previousElementSibling.style.color = "#f67e7e";
-        input.style.borderBottom = "1px solid #f67e7e";
-        errorElement.textContent = "This field is required";
+        setError(input, errorElement, "This field is required");
         return false;
       }
 
       if(value.length < minlength) {
-        input.previousElementSibling.style.color = "#f67e7e";
-        input.style.borderBottom = "1px solid #f67e7e";
-        error.textContent =  message;
+       setError(input, errorElement, message);
         return false;
       }
       
+      clearError(input, errorElement);
       return true;
 }
 
-const validateEmail = (input, error) => {
+const validateEmail = (input, errorElement) => {
 
     const value = input.value.trim();
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (value.length === 0) {
-        input.previousElementSibling.style.color = "#f67e7e";
-        input.style.borderBottom = "1px solid #f67e7e";
-        error.textContent = "This field is required";
+        setError(input, errorElement, "This field is required");
         return false;
     }
 
     if (!pattern.test(value)) {
-        input.previousElementSibling.style.color = "#f67e7e";
-        input.style.borderBottom = "1px solid #f67e7e";
-        error.textContent = "please enter a valid email";
+       setError(input, errorElement, "Please enter a valid email")
         return false;
     }
-
+    
+    clearError(input, errorElement);
     return true;
 }
 
+// live validation
+fullname.addEventListener("input", () => {
+    validateInput(fullname, nameError , 3 , "name must be at least 3 characters long");
+});
+
+email.addEventListener("input", () => {
+    validateEmail(email, emailError);
+});
+
+companyName.addEventListener("input", () => {
+    validateInput(companyName, companyError , 3 , " company name must be at least 3 characters long")
+});
+
+message.addEventListener("input", () => {
+    validateInput(message, messageError ,10, "message must be at least 10 characters long");
+});
+
+// form submit validation
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 

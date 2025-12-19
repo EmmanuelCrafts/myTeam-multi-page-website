@@ -72,12 +72,21 @@ main {
     flex-direction: column;
 }
 
-.input-wrapper label {
+label {
     padding-left: 14px;
     transition: opacity 0.3s ease;
     opacity: 60%;
 }
-.input-wrapper input {
+
+.label-hidden {
+  opacity: 0;
+}
+
+.label-show {
+  opacity: 0.6;
+}
+
+input {
     background-color: transparent;
     border: none;
     color: #ffffff80;
@@ -85,18 +94,34 @@ main {
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-.input-wrapper input:focus {
+ input:focus {
   color: var(--color-primary-white);
   padding-bottom: 16px;
   padding-left: 16px;
+  border-bottom: 1px solid var(--color-secondary-rapture-blue);
 }
 
 /* error message */
-.error {
+.error-message {
   font-size: 10px;
-   color: var(--color-primary-light-coral);
-   padding-top: 6px;
-   font-style: italic;
+  color: var(--color-primary-light-coral);
+  padding-top: 6px;
+  padding-left: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+.hidden {
+  display: none;
+}
+
+input.input-error {
+  border-bottom: 1px solid var(--color-primary-light-coral);
+}
+
+label.label-error{
+  color: #f67e7e;
 }
 
 .message label{
