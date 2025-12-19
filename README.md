@@ -31,7 +31,7 @@ Users should be able to:
 Desktop view:
 ![Home Desktop](./assets/screenshots/Home-desktop.png) 
 
-Mobile view (optional):
+Mobile view:
  ![Home Mobile](./assets/screenshots/mobile-nav.png)
 
 #### About Page
