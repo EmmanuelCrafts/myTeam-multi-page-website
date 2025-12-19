@@ -42,7 +42,7 @@ Desktop view with expanded card:
 Desktop form:
 ![Contact Desktop](./assets/screenshots/contact.png)
 
-Form error state (optional):
+Form error state :
 ![Contact Error](./assets/screenshots/contact-error.png)
 
 ---
