@@ -36,14 +36,14 @@ Mobile view (optional):
 
 #### About Page
 Desktop view with expanded card:
-![About Desktop](./assets/about.png)
+![About Desktop](./assets/screenshots/about.png)
 
 #### Contact Page
 Desktop form:
-![Contact Desktop](./assets/contact.png)
+![Contact Desktop](./assets/screenshots/contact.png)
 
 Form error state (optional):
-![Contact Error](./assets/contact-error.png)
+![Contact Error](./assets/screenshots/contact-error.png)
 
 ---
 
