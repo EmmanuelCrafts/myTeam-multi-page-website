@@ -27,7 +27,23 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop preview](./assets/preview.png)
+#### Home Page
+Desktop view:
+![Home Desktop](./assets/screenshots/Home-desktop.png) 
+
+Mobile view:
+ ![Home Mobile](./assets/screenshots/mobile-nav.png)
+
+#### About Page
+Desktop view with expanded card:
+![About Desktop](./assets/screenshots/about.png)
+
+#### Contact Page
+Desktop form:
+![Contact Desktop](./assets/screenshots/contact.png)
+
+Form error state :
+![Contact Error](./assets/screenshots/contact-error.png)
 
 ---
 
@@ -67,8 +83,8 @@ In future projects, I want to focus more on:
 
 ## 🔗 Links
 
-- Live Site: *(add your live URL here if deployed)*
-- Frontend Mentor Challenge: https://www.frontendmentor.io/challenges/myteam-multipage-website
+- Live Site: https://myteam-website-emmanuel.netlify.app/
+- Frontend Mentor Challenge: https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW
 
 ---
 
