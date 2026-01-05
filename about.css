@@ -71,6 +71,22 @@
     transition: transform 0.8s ease;
     transform-style: preserve-3d;
 }
+.front_card, 
+.back_card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.back_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    transform: rotateY(180deg);
+}
 
 .front_card {
     display: flex;
@@ -78,6 +94,11 @@
     align-items: center;
     padding-top: 32px;
 }
+
+.director-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
 .front_card img {
     border-radius: 50%;
     margin-bottom: 16px;
