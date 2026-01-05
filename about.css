@@ -54,6 +54,7 @@
 }
 
 .director-card {
+    perspective: 1000px;
     display: flex;
     justify-content: center;
     background-color: var(--color-secondary-state-green);
@@ -62,6 +63,13 @@
     position: relative;
     margin-bottom: 52px;
     border-radius: 8px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
 }
 
 .front_card {
