@@ -11,6 +11,18 @@ close.addEventListener("click", ()=>{
     scrollMenu.classList.remove("menu-slide-in");
 });
 
+// flip-effect for director cards
+const directorCards = document.querySelectorAll(".director-card");
+
+directorCards.forEach((card) => {
+    const flipButtons = card.querySelectorAll(".flip-button");
+
+    flipButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            card.classList.toggle("flipped");
+        });
+    });
+});
 // form validation
 const form = document.getElementById("contact-form");
 const nameError = document.getElementById("nameError");

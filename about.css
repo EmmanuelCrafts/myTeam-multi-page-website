@@ -94,8 +94,8 @@
 }
 
 
-
-.director-card:hover .card-inner {
+/* flipping effect */
+.director-card.flipped .card-inner {
     transform: rotateY(180deg);
 }
 
@@ -128,9 +128,11 @@
     margin-bottom: 56px;
 }
 
-.add-icon {
+.add-icon,
+.close-icon {
    width: 56px;
    height: 56px;
+   cursor: pointer;
    background-color: var(--color-primary-light-coral);
    border-radius: 50%;
    display: flex;
@@ -169,16 +171,8 @@
 }
 
 .close-icon {
-   width: 56px;
-   height: 56px;
-   background-color: var(--color-secondary-rapture-blue);
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position:absolute;
-   bottom: 0px;
-   transform: translateY(50%);
+    background-color: var(--color-secondary-rapture-blue);
+
 }
 
 .directors-container .pattern-about-3 img {
