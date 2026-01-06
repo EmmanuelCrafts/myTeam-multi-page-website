@@ -59,6 +59,7 @@
     justify-content: center;
     background-color: var(--color-secondary-state-green);
     width: 90%;
+    height: 300px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 52px;
@@ -99,10 +100,11 @@
     transform: rotateY(180deg);
 }
 
-.front_card img {
+.front_card > img {
     border-radius: 50%;
     margin-bottom: 16px;
-    width: 40%;
+    width: 96px;
+    height: 96px;
     border: 2px solid var(--color-primary-white);
 }
 
