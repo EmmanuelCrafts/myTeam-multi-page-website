@@ -228,6 +228,17 @@ footer {
     margin-bottom: 16px;
 }
 
+ /* social media hover */
+.social-link {
+  color: #FFF;              /* default color (white) */
+  transition: color 0.3s;   /* smooth hover effect */
+}
+
+.social-link:hover {
+    color: var(--color-primary-light-coral);    
+    cursor: pointer;
+}
+
 .footer-wrapper p {
     opacity: 60%;
 }
