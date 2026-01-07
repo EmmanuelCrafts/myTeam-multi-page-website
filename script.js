@@ -23,6 +23,20 @@ directorCards.forEach((card) => {
         });
     });
 });
+
+// make navbar links active
+const navLinks = document.querySelectorAll(".nav_active a");
+const currentPage = window.location.pathname.split("/").pop();
+
+navLinks.forEach((link) => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+        link.classList.add("active");
+    }       
+});
+
+
 // form validation
 const form = document.getElementById("contact-form");
 const nameError = document.getElementById("nameError");
